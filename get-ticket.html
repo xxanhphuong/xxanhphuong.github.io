@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/img/logo.ico" />
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
+  <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/get-ticket.css" rel="stylesheet" />
+  <title>NatFlix mother lucker</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 navigation">
+          <div class="row">
+            <div class="logo col-sm-2 d-flex align-items-center">
+              <a href="#"><img src="assets/img/logo-01.png" alt="" /></a>
+            </div>
+            <div class="col-sm-6 nav-bar">
+              <ul class="rm-mg">
+                <li>
+                  <a href="#">HOME</a>
+                </li>
+                <li>
+                  <a href="#">THEATER</a>
+                </li>
+                <li>
+                  <a href="#">MEMBERSHIP</a>
+                </li>
+                <li>
+                  <a href="#">CURTULEPLEX</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4 d-flex align-items-center justify-content-end rm-pd">
+              <div class="search-form">
+                <input type="text" placeholder="Search..." />
+                <button class="rm-pd"><i class="fas fa-search"></i></button>
+              </div>
+              <div class="user-group">
+                <button>
+                  <i class="fas fa-caret-down"></i>
+                  <span>Rihanna</span>
+                  <i class="fas fa-user"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9">
+          <section class="booking-seat">
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="assets/img/cinema-1.jpg" alt="" />
+              </div>
+              <div class="col-sm-7">
+                <div class="rating">
+                  <p>
+                    <a class="float-left" href="#">
+                      <h5>CineStart Ly Chinh Thang</h5>
+                    </a>
+                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                    <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                  </p>
+                </div>
+                <p class="address m-0">
+                  <i class="fas fa-map-marker"></i>
+                  Tầng 11, toà nhà Hồng Hà, 25 Lý Thường Kiệt, phường Phan Chu
+                  Trinh, quận Hoàn Kiếm, Hà Nội, Việt Nam.
+                </p>
+              </div>
+              <div class="col-ms-2 d-flex align-items-center">
+                <a class="btn text-uppercase" href="#">booking seat</a>
+              </div>
+            </div>
+          </section>
+          <section class="choose-seat">
+            <div class="row form-group">
+              <div class="col-sm-3 d-flex align-items-center">
+                <h5>Choose Seat</h5>
+              </div>
+              <div class="col-sm-9">
+                <div class="row d-flex justify-content-end">
+                  <div class="col-sm-4">
+                    <select>
+                      <option value="a">23/11/2019</option>
+                      <option value="a">11/02/2019</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-4">
+                    <select>
+                      <option value="a">12:00 pm</option>
+                      <option value="a">11:00 am</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="screen">
+              <i class="fas fa-sign-in-alt"></i>
+              <label>SCREEN</label>
+              <div></div>
+            </div>
+            <div class="screen-f"></div>
+            <div class="box d-flex justify-center">
+              <div class="seats"></div>
+            </div>
+          </section>
+        </div>
+        <div class="col-sm-3">
+          <section class="hot-promo">
+            <h6>Hot Promo</h6>
+          </section>
+          <section class="ticket-inf">
+            <h6>Tickets info</h6>
+            <p>
+              <label><i class="fas fa-ticket-alt"></i>Total:</label>
+              <span id="total"></span>
+            </p>
+            <p>
+              <label><i class="fas fa-dollar-sign"></i>Price:</label>
+              <span id="price"></span>
+            </p>
+            <p>
+              <label><i class="fas fa-chair"></i>Seat:</label>
+              <span id="seat"></span>
+            </p>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <section class="y-selected button-container-3">
+            <div class="list-movie swiper-container">
+              <div class="swiper-wrapper">
+                <img class="swiper-slide" src="assets/img/poster-movie-2.jpg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-4.jpeg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-5.jpg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-7.jpeg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-6.jpg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-7.jpg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-10.jpg" alt="" />
+                <img class="swiper-slide" src="assets/img/poster-movie-5.jpg" alt="" />
+              </div>
+            </div>
+            <hr class="hr-primary" width="50%" />
+            <h5>SPIDER-MAN: FAR FROM HOME</h5>
+            <p>
+              Bạn biết vì sao Avengers: Endgame không có after-credit không?
+              Bởi vì ngay sau câu chuyện đó chính là sự ra mắt của Spider-Man:
+              Far From Home đấy. Trở lại sau sự ra đi của người chú Tony –
+              Iron Man, có vẻ như cậu bé Peter đã không còn đủ động lực, niềm
+              tin để tiếp tục theo đuổi giấc mơ làm siêu anh hùng...
+            </p>
+            <a class="d-flex justify-content-end read-m" href="#">Read more</a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="footer">
+            <img src="assets/img/logo-01.png" alt="" />
+            <div class="contact">
+              <input type="text" />
+              <input type="submit" />
+            </div>
+            <div class="icon-group">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/swiper.min.js"></script>
+<script type="text/javascript" src="assets/js/style.js"></script>
+
+</html>

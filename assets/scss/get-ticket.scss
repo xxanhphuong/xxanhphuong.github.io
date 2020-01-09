@@ -1,0 +1,138 @@
+$primary-border: #253051;
+$secondary-border: #e46f6e;
+$border-hover: #e4706e81;
+$font-normal: 14px;
+$font-content: 12px;
+$primary-font-color: #fff;
+$secondary-font-color: #2c8e85;
+$primary-font-content-color: rgb(196, 196, 196);
+$article-font-color: #4c4c4c;
+$section-primary: #00071d;
+
+header {
+  margin-bottom: 24px;
+}
+section {
+  margin-top: 16px;
+  background: $section-primary;
+  padding: 16px;
+  border-radius: 8px;
+}
+.booking-seat {
+  img {
+    border-radius: 8px;
+  }
+  a.btn {
+    padding: 6px;
+    font-size: $font-normal;
+  }
+  .rating {
+    overflow: auto;
+  }
+  .address {
+    padding: 16px 0;
+    color: $primary-font-content-color;
+    i {
+      color: $primary-font-content-color;
+      padding: 0 8px 0 0;
+    }
+  }
+}
+.y-selected {
+  .read-m {
+    color: $secondary-border;
+    font-size: $font-content;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  p {
+    color: #ffffff8f;
+    line-height: 2em;
+    margin-top: 16px;
+  }
+  h5 {
+    margin-top: 32px;
+  }
+  .list-movie {
+    img {
+      &:hover {
+        filter: grayscale(1);
+      }
+    }
+  }
+}
+.choose-seat {
+  padding: 32px 16px;
+  select {
+    margin: 0;
+  }
+  .screen {
+    width: 68%;
+    margin: 0 auto 0px auto;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e46f6e;
+    i {
+      transform: rotate(90deg);
+    }
+  }
+  .screen-f {
+    width: 58%;
+    margin: 0 auto 32px auto;
+    height: 5px;
+    background: #e46f6e;
+  }
+  .box {
+    .seats {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 15px) 60px repeat(4, 15px) 60px repeat(4, 15px) 60px repeat(2, 15px);
+      grid-gap: 6px;
+      .seat {
+        width: 15px;
+        height: 15px;
+        background: #8c8c8c;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.2s all;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      .active-seat {
+        background: $secondary-border;
+      }
+      .selected-seat {
+        background: $secondary-font-color;
+      }
+    }
+  }
+}
+
+.hot-promo {
+  background: $section-primary;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.ticket-inf {
+  h6 {
+    margin-bottom: 24px;
+  }
+  i {
+    min-width: 26px;
+    color: $primary-font-color;
+  }
+  span {
+    color: $secondary-font-color;
+    font-weight: bold;
+  }
+  p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}

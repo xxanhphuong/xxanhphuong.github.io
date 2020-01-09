@@ -1,0 +1,121 @@
+header {
+  margin-bottom: 24px;
+}
+
+section {
+  margin-top: 16px;
+  background: #00071d;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.booking-seat img {
+  border-radius: 8px;
+}
+.booking-seat a.btn {
+  padding: 6px;
+  font-size: 14px;
+}
+.booking-seat .rating {
+  overflow: auto;
+}
+.booking-seat .address {
+  padding: 16px 0;
+  color: #c4c4c4;
+}
+.booking-seat .address i {
+  color: #c4c4c4;
+  padding: 0 8px 0 0;
+}
+
+.y-selected .read-m {
+  color: #e46f6e;
+  font-size: 12px;
+}
+.y-selected .read-m:hover {
+  opacity: 0.8;
+}
+.y-selected p {
+  color: #ffffff8f;
+  line-height: 2em;
+  margin-top: 16px;
+}
+.y-selected h5 {
+  margin-top: 32px;
+}
+.y-selected .list-movie img:hover {
+  filter: grayscale(1);
+}
+
+.choose-seat {
+  padding: 32px 16px;
+}
+.choose-seat select {
+  margin: 0;
+}
+.choose-seat .screen {
+  width: 68%;
+  margin: 0 auto 0px auto;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e46f6e;
+}
+.choose-seat .screen i {
+  transform: rotate(90deg);
+}
+.choose-seat .screen-f {
+  width: 58%;
+  margin: 0 auto 32px auto;
+  height: 5px;
+  background: #e46f6e;
+}
+.choose-seat .box .seats {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 15px) 60px repeat(4, 15px) 60px repeat(4, 15px) 60px repeat(2, 15px);
+  grid-gap: 6px;
+}
+.choose-seat .box .seats .seat {
+  width: 15px;
+  height: 15px;
+  background: #8c8c8c;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.choose-seat .box .seats .seat:hover {
+  opacity: 0.8;
+}
+.choose-seat .box .seats .active-seat {
+  background: #e46f6e;
+}
+.choose-seat .box .seats .selected-seat {
+  background: #2c8e85;
+}
+
+.hot-promo {
+  background: #00071d;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.ticket-inf h6 {
+  margin-bottom: 24px;
+}
+.ticket-inf i {
+  min-width: 26px;
+  color: #fff;
+}
+.ticket-inf span {
+  color: #2c8e85;
+  font-weight: bold;
+}
+.ticket-inf p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=get-ticket.css.map */
